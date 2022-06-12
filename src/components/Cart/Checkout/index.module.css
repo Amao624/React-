@@ -1,0 +1,87 @@
+.checkout {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(240, 240, 240);
+    z-index: 9999;
+}
+
+.checkout i {
+    display: block;
+    margin: 30rem 20rem;
+}
+
+.background {
+    display: flex;
+    flex-flow: column;
+    background-color: #fff;
+    border-radius: 50rem;
+    padding: 30rem;
+    margin: 0 20rem;
+    overflow: hidden;
+}
+
+.title {
+    display: block;
+    font-size: 35rem;
+    font-weight: bold;
+    padding-bottom: 20rem;
+    border-bottom: 2rem solid #f2f2f2;
+}
+
+.shoppingCart {
+    display: flex;
+    flex-flow: column;
+    color: #999;
+    font-size: 40rem;
+    align-items: center;
+}
+
+.shoppingCart i {
+    font-size: 200rem;
+    color: rgba(9, 9, 9, 0.2);
+    margin-bottom: 20rem;
+}
+
+.list {
+    max-height: 800rem;
+    overflow: auto;
+}
+
+.total {
+    line-height: 50rem;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 35rem;
+    font-weight: bold;
+    margin-top: 30rem;
+}
+
+.total::before {
+    content: "合计￥";
+    font-size: 15rem;
+}
+
+.footer {
+    position: relative;
+    border-top: 2rem #f2f2f2 dashed;
+}
+
+.footer::after,
+.footer::before {
+    content: "";
+    position: absolute;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    top:-15rem;
+    left:-40rem;
+}
+
+.footer::after{
+    left:auto;
+    right: -40rem;
+}

@@ -1,0 +1,71 @@
+.pay {
+    position: fixed;
+    width: 650rem;
+    height: 90rem;
+    line-height: 90rem;
+    bottom: 50rem;
+    background-color: #4a4a4a;
+    margin: 0 50rem;
+    border-radius: 50rem;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{
+    flex: auto;
+}
+
+.thing,
+.price {
+    position: relative;
+    left: 120rem;
+    font-size: 30rem;
+    font-weight: bolder;
+    color: #999;
+}
+
+.price {
+    color: #f9f9f9;
+}
+
+.gotopay,
+.nodesc {
+    float: right;
+    width: 180rem;
+    background-color: #fcbf49;
+    border-radius: 50rem;
+}
+
+.nodesc {
+    background-color: #aaa;
+    color: #4a4a4a;
+}
+
+.desc,
+.nodesc {
+    display: block;
+    font-size: 30rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.bag {
+    width: 100rem;
+    position: absolute;
+    top: -30%;
+}
+
+.shopNumber {
+    position: absolute;
+    top: -30rem;
+    left: 80rem;
+    width: 45rem;
+    line-height: 45rem;
+    font-size: 20rem;
+    border-radius: 50%;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}

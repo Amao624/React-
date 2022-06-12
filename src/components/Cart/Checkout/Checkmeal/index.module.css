@@ -1,0 +1,38 @@
+.checkmeal {
+    display: flex;
+    align-items: center;
+    padding: 10rem;
+    border-bottom: 2rem solid #f2f2f2;
+}
+
+/* 图片大小盒子 */
+.imgbox {
+    width: 180rem;
+    margin-right: 20rem;
+}
+
+img {
+    width: 100%;
+}
+
+/* 标题 */
+.title {
+    font-size: 30rem;
+    font-weight: bold;
+}
+
+/* 价格区域和按钮 */
+.pricebox {
+    flex:auto;
+    line-height: 90rem;
+}
+
+.price{
+    display:flex;
+    justify-content: space-between;
+}
+
+.pricenum {
+    font-size: 30rem;
+    font-weight: bold;
+}

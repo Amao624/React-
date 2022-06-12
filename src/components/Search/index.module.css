@@ -1,0 +1,28 @@
+.Search {
+    padding: 20rem;
+    border-bottom: 1px solid #f2f2f2;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.main {
+    display: flex;
+}
+
+.input {
+    flex: auto;
+    border: none;
+    outline: none;
+    background-color: rgba(99, 99, 99, .2);
+    border-radius: 50rem;
+    padding: 20rem;
+    padding-left: 80rem;
+}
+
+.icon {
+    height: 70rem;
+    line-height:70rem;
+    font-size: 20px;
+    position: absolute;
+    left: 45rem;
+}

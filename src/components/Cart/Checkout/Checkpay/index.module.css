@@ -1,0 +1,32 @@
+.pay {
+    position: fixed;
+    width: 650rem;
+    line-height: 90rem;
+    bottom: 50rem;
+    background-color: #4a4a4a;
+    margin: 0 50rem;
+    border-radius: 50rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    margin-left: 30rem;
+    font-size: 30rem;
+    font-weight: bolder;
+    color: #f9f9f9;
+}
+.price::before {
+    content: "合计￥";
+    font-size: 20rem;
+    font-weight: normal;
+}
+
+.desc {
+    width: 180rem;
+    background-color: #fcbf49;
+    border-radius: 50rem;
+    font-size: 30rem;
+    text-align: center;
+    font-weight: bold;
+}

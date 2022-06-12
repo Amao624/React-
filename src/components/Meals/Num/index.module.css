@@ -1,0 +1,30 @@
+.counter {
+    display: flex;
+    align-items: center;
+}
+
+.addbtn,
+.delbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20rem;
+    font-weight: bold;
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    background-color: #fcbf49;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+.delbtn {
+    background-color: #fff;
+    border:2rem solid #999;
+}
+
+.sum {
+    font-size: 30rem;
+    padding: 0 25rem;
+}
