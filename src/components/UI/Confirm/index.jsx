@@ -6,7 +6,7 @@ import classes from './index.module.css';
 
 export default function Confirm(props) {
     return (
-        <Backdrop>
+        <Backdrop onClick={(e) => e.stopPropagation()}>
             <div className={classes.Confirm}>
                 {/* 提示文字 */}
                 <p className={classes.ConfirmText}>{props.confirmText}</p>
@@ -15,9 +15,9 @@ export default function Confirm(props) {
                     <button
                         onClick={(e) => { props.onCancel(e) }}
                         className={classes.Cancel}>取消</button>
-                        {/* 确认按钮 */}
+                    {/* 确认按钮 */}
                     <button
-                        onClick={() => props.onOk() }
+                        onClick={() => props.onOk()}
                         className={classes.Ok}>确认</button>
                 </div>
             </div>

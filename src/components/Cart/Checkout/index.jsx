@@ -51,7 +51,7 @@ export default function Checkout(props) {
                 </footer>
             </div>
             {/* 用户即将支付组件 */}
-            <Checkpay />
+            <Checkpay setIsCheckOut={props.setIsCheckOut}/>
         </div>
         , checkoutRoot)
 }

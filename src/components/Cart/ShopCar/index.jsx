@@ -19,6 +19,7 @@ export default function ShopCar(props) {
     const cancelHandler = (e) => {
         e.stopPropagation();
         setShowConfirm(false);
+        props.setIsShopCar(false)
     };
 
     // 购物车数据遍历数组

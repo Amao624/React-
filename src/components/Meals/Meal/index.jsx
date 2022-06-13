@@ -29,9 +29,7 @@ export default function Meal(props) {
                     <div className={classes.price}>
                         {/* 汉堡价格 */}
                         <span className={classes.pricenum}>{price}</span>
-                        <Num
-                            meal={props.meal}
-                        />
+                        <Num meal={props.meal} />
                     </div>
                 </div>
             </div>

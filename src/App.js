@@ -89,13 +89,18 @@ function App() {
   const clearCartData = () => {
     // 浅拷贝购物车数据
     const newCartData = { ...cartData }
+
+    // 归零商品的数量
+    newCartData.items.forEach(item => delete item.amount)
+
     // 将购物车中商品的数量清0
     newCartData.items = []
-    // newCartData.items.forEach(item => delete item.amount);
+
     // 初始化总价格和商品总数
     newCartData.totalPrice = newCartData.totalAmount = 0;
+
     // 更新状态，重新渲染页面
-    setCartData(newCartData);
+    setCartData(newCartData)
   }
 
   // 传递的方法与数据

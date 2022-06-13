@@ -10,4 +10,5 @@ export default React.createContext({
     shopPrice: 0,
     delMealsNumber: () => { },
     addMealsNumber: () => { },
+    clearCartData: () => {},
 })
