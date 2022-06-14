@@ -41,7 +41,8 @@ export default function ShopCar(props) {
                     }}
                     onOk={() => {
                         props.setIsShopCar(false)
-                        ctx.clearCartData()
+                        // ctx.clearCartData()
+                        ctx.cartDataDispatch({ type: "CLEARCARTDATA" })
                     }}
                     confirmText={"你确定要清空购物车吗!"}
                 />

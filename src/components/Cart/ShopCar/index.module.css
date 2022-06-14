@@ -32,7 +32,7 @@
 
 .list {
     overflow: auto;
-    padding:50rem;
+    padding: 0 50rem;
 }
 
 .shoppingCart {

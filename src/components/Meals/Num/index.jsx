@@ -14,12 +14,14 @@ export default function Num(props) {
     // 计数按钮增加方法
     const addNum = () => {
         // console.log(props)
-        ctx.addMeals(props.meal)
+        // ctx.addMeals(props.meal)
+        ctx.cartDataDispatch({type:"ADDCARTDATA",meal:props.meal})
     }
 
     // 计数按钮减少方法
     const delNum = () => {
-        ctx.delMeals(props.meal)
+        // ctx.delMeals(props.meal)
+        ctx.cartDataDispatch({type:"DELCARTDATA",meal:props.meal})
     }
 
     return (

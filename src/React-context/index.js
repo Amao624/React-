@@ -8,7 +8,8 @@ export default React.createContext({
     shop: [],
     shopNumber: 0,
     shopPrice: 0,
-    delMealsNumber: () => { },
-    addMealsNumber: () => { },
-    clearCartData: () => {},
+    // delMealsNumber: () => { },
+    // addMealsNumber: () => { },
+    // clearCartData: () => { },
+    cartDataDispatch: () => { },
 })
