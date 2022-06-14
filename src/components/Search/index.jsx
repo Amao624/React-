@@ -5,10 +5,10 @@ import classes from './index.module.css'
 // 防抖函数
 const fangdou = (callback, time) => {
     let timer = null;
-    return (e) => {
+    return (...args) => {
         timer && clearTimeout(timer);
         timer = setTimeout(() => {
-            callback.call(this, e)
+            callback.call(this, args)
         }, time)
     }
 }
