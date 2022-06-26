@@ -5,10 +5,10 @@ import classes from './index.module.css'
 // 防抖函数
 const fangdou = (callback, time) => {
     let timer = null;
-    return (...args) => {
+    return (e) => {
         timer && clearTimeout(timer);
         timer = setTimeout(() => {
-            callback.call(this, args)
+            callback.call(this, e)
         }, time)
     }
 }
@@ -18,7 +18,7 @@ export default function Search(props) {
     const { filterHandler } = props
 
     // 输入框onChange事件函数
-    const onchangeSearch = (e) => {
+    const onchangeSearch = e => {
         const keyWord = e.target.value.trim("");
         filterHandler(keyWord);
     }
